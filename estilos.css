@@ -1,0 +1,104 @@
+:root {
+    color-scheme: light;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #172554;
+    background: #f1f5f9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: radial-gradient(circle at top left, #dbeafe 0, transparent 38%), #f1f5f9;
+}
+
+.card {
+    width: min(100%, 480px);
+    padding: 40px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 20px 50px rgb(15 23 42 / 9%);
+}
+
+.icon {
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    color: #2563eb;
+    background: #eff6ff;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(1.6rem, 5vw, 2rem);
+    letter-spacing: -0.04em;
+}
+
+.description {
+    margin: 10px 0 28px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px dashed #94a3b8;
+    border-radius: 12px;
+    background: #f8fafc;
+    color: #475569;
+    cursor: pointer;
+}
+
+input[type="file"]:focus-visible,
+button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+.hint {
+    margin: 9px 0 24px;
+    color: #64748b;
+    font-size: 0.8rem;
+}
+
+button {
+    width: 100%;
+    padding: 14px 18px;
+    border: 0;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 150ms ease, transform 150ms ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 520px) {
+    .card {
+        padding: 28px 22px;
+    }
+}
